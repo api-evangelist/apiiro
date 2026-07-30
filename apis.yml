@@ -1,8 +1,28 @@
 aid: apiiro
 name: Apiiro
-description: 'Apiiro is a company surfaced as a portfolio company of greylock and added to the API Evangelist
-  network as a stub for enrichment. Sector: cybersecurity. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Apiiro is an Application Security Posture Management (ASPM) company that helps
+  organizations secure modern and AI-assisted ("agentic") software development.
+  Its AppSec Data Fabric ingests code, cloud, runtime, and pipeline signals to
+  build a Risk Graph and Software Graph, and its Guardian Agent applies AI to
+  triage and remediate risk across AI SAST, AI SCA, AI SPM, AI threat modeling,
+  API security, secrets security, software supply chain security (SSCS), and
+  autofix/prevention workflows. Apiiro is a cybersecurity portfolio company of
+  Greylock. The product API and developer documentation are gated behind an
+  Apiiro identity provider (identity.apiiro.com); this network profile is built
+  from Apiiro's public marketing, security.txt, status, and trust surfaces.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.apiiro.com/
 url: https://raw.githubusercontent.com/api-evangelist/apiiro/refs/heads/main/apis.yml
 x-type: company
 x-source: greylock-portfolio
@@ -14,6 +34,12 @@ modified: '2026-07-17'
 tags:
 - Company
 - Cybersecurity
+- Application Security
+- ASPM
+- DevSecOps
+- Software Supply Chain Security
+- AI Security
+- Code Security
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,52 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: TrustCenter
+  url: security/apiiro-trust-center.yml
+- type: DomainSecurity
+  url: security/apiiro-domain-security.yml
 - type: Website
   url: https://www.apiiro.com/
+- type: Documentation
+  url: https://docs.apiiro.com/
+- type: DeveloperPortal
+  url: https://docs.apiiro.com/
+- type: Blog
+  url: https://www.apiiro.com/blog
+- type: GitHubOrganization
+  url: https://github.com/apiiro
+- type: Packages
+  url: packages/apiiro-packages.yml
+- type: CLI
+  url: cli/apiiro-cli.yml
+- type: Login
+  url: https://app.apiiro.com/
+- type: Signup
+  url: https://www.apiiro.com/thank-you-demo
+- type: TermsOfService
+  url: https://www.apiiro.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.apiiro.com/privacy-policy
+- type: Integrations
+  url: https://www.apiiro.com/platform/data-fabric/integrations
+- type: StatusPage
+  url: https://status.apiiro.com/
+- type: Compliance
+  url: https://trust.apiiro.com/
+- type: SecurityTxt
+  url: well-known/apiiro-security.txt
+- type: WellKnown
+  url: well-known/apiiro-well-known.yml
+- type: LLMsTxt
+  url: llms/apiiro-llms.txt
+- type: Lifecycle
+  url: lifecycle/apiiro-lifecycle.yml
+- type: VulnerabilityDisclosure
+  url: security/apiiro-vulnerability-disclosure.yml
+- type: Security
+  url: security/apiiro-vulnerability-disclosure.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
