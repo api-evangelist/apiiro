@@ -1,0 +1,27 @@
+generated: '2026-07-17'
+method: searched
+source: https://www.npmjs.com/package/apiiro-cli
+packages:
+- language: javascript
+  registry: npm
+  name: apiiro-cli
+  version: 1.4.3
+  url: https://www.npmjs.com/package/apiiro-cli
+  install: npm install -g apiiro-cli
+  repository: https://github.com/apiiro/apiiro-cli
+  license: MIT
+  bin: apiiro
+  description: >-
+    Command-line interface for the Apiiro platform — security scanning, risk
+    analysis, and AI-powered queries. Ships platform-specific binaries via the
+    scoped @apiiro/cli-<os>-<arch> packages (darwin-x64, darwin-arm64,
+    linux-x64, linux-arm64, win32-x64).
+  official: true
+  kind: cli
+notes: >-
+  First-party CLI published from the apiiro GitHub org. A PyPI project named
+  "apiiro" and a bare npm "apiiro" package also exist but are published by
+  third-party accounts (not the apiiro org) and are NOT marked official. Backstage
+  community plugins for Apiiro exist under @backstage-community/* but are
+  community-maintained, not first-party. No first-party client-library SDK
+  (Python/JS/Go/etc.) was found on public registries; the product API is gated.

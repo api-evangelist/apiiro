@@ -1,0 +1,14 @@
+generated: '2026-07-17'
+method: searched
+source: https://status.apiiro.com/
+status_page: https://status.apiiro.com/
+versioning: null
+deprecation: null
+sla: null
+notes: >-
+  Apiiro publishes a public status page (title "Apiiro Status") at
+  status.apiiro.com. Versioning, deprecation policy, and SLA are documented only
+  inside the gated developer docs (docs.apiiro.com, behind the Apiiro IDP) and
+  could not be captured publicly. No deprecated operations are known because no
+  public OpenAPI is available.
+deprecated_operations: []

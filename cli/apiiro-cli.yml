@@ -1,0 +1,28 @@
+generated: '2026-07-17'
+method: searched
+source: https://www.npmjs.com/package/apiiro-cli
+name: apiiro
+package: apiiro-cli
+version: 1.4.3
+repository: https://github.com/apiiro/apiiro-cli
+license: MIT
+description: >-
+  Command-line interface for the Apiiro platform — security scanning, risk
+  analysis, and AI-powered queries.
+install:
+- method: npm
+  command: npm install -g apiiro-cli
+platform_binaries:
+- "@apiiro/cli-darwin-x64"
+- "@apiiro/cli-darwin-arm64"
+- "@apiiro/cli-linux-x64"
+- "@apiiro/cli-linux-arm64"
+- "@apiiro/cli-win32-x64"
+capabilities:
+- security scanning
+- risk analysis
+- AI-powered queries
+notes: >-
+  Command/flag surface is documented inside the gated Apiiro docs
+  (docs.apiiro.com) and the CLI's own --help; not enumerated here to avoid
+  fabrication. Keywords published on npm: apiiro, cli, security, devsecops.

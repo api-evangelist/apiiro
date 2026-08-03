@@ -1,0 +1,19 @@
+generated: '2026-07-17'
+method: searched
+source: https://www.apiiro.com/.well-known/
+host: https://www.apiiro.com
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  file: apiiro-security.txt
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+notes: >-
+  identity.apiiro.com, app.apiiro.com, and docs.apiiro.com return HTTP 200 for
+  /.well-known/openid-configuration and /.well-known/oauth-authorization-server,
+  but the body is the Apiiro IDP sign-in HTML (a catch-all), not RFC 8414 / OIDC
+  discovery JSON, so no discovery document is captured. An OAuth authorization
+  surface exists (identity.apiiro.com/oauth-v2/authorize, client_id apiiro-gw)
+  but is gated and publishes no discovery metadata.
