@@ -27,58 +27,6 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
-- slug: apiiro-mcp-registry
-  label: MCP Registry
-  partner: mcp
-  partner_name: MCP Registry
-  type: register
-  channel: standard-directory
-  evidence: https://registry.modelcontextprotocol.io/v0/servers?search=io.github.apiiro
-  source: edge
-  relationship: standard-participant
-  contract_reference:
-    register: registry.modelcontextprotocol.io
-    spec_file: null
-    role: mcp-server-listing
-    registered_name: io.github.apiiro/guardian-agent
-    register_id: io.github.apiiro/guardian-agent
-    detected_by: sweep-agent-tools.py
-    detected: '2026-10-15'
-  status: not-a-workflow
-  arazzo: null
-- slug: apiiro-cncf-cloud-native-landscape
-  label: CNCF (Cloud Native Landscape)
-  partner: cncf
-  partner_name: CNCF (Cloud Native Landscape)
-  category: Cloud native landscape
-  type: register
-  channel: standard-directory
-  evidence: https://github.com/cncf/landscape/blob/3a7d378b1824b82e729a453bb03fa6f1e37557e1/landscape.yml
-  source: edge
-  relationship: standard-participant
-  contract_reference:
-    register: CNCF Cloud Native Landscape (github.com/cncf/landscape landscape.yml @3a7d378b18)
-    spec_file: null
-    standard: Cloud Native (CNCF)
-    role: cncf-member (Silver)
-    registered_name: Apiiro
-    registered_names:
-    - Apiiro
-    website: https://www.apiiro.com/
-    matched_domain: apiiro.com
-    matched_by: domain+name-among-holders
-    member_tier: Silver
-    joined: '2021-08-01'
-    end_user: false
-    cncf_projects: []
-    landscape_categories: []
-    landscape_entries: 0
-    signal_note: 'participation only: a landscape listing is standard-participant evidence, not depth. Entries,
-      categories, tier and projects are CONTEXT, never read (breadth is not credit)'
-    detected_by: sweep-cloud-native.py
-    detected: '2026-10-15'
-  status: not-a-workflow
-  arazzo: null
 - slug: apiiro-openssf-open-source-security-foundation
   label: OpenSSF (Open Source Security Foundation)
   partner_name: OpenSSF (Open Source Security Foundation)
@@ -167,5 +115,57 @@
       24 months'
     detected_by: sweep-official-sdks.py
     detected: '2026-10-18'
+  status: not-a-workflow
+  arazzo: null
+- slug: apiiro-mcp-registry
+  label: MCP Registry
+  partner: mcp
+  partner_name: MCP Registry
+  type: register
+  channel: standard-directory
+  evidence: https://registry.modelcontextprotocol.io/v0/servers?search=io.github.apiiro
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: registry.modelcontextprotocol.io
+    spec_file: null
+    role: mcp-server-listing
+    registered_name: io.github.apiiro/guardian-agent
+    register_id: io.github.apiiro/guardian-agent
+    detected_by: sweep-agent-tools.py
+    detected: '2026-10-19'
+  status: not-a-workflow
+  arazzo: null
+- slug: apiiro-cncf-cloud-native-landscape
+  label: CNCF (Cloud Native Landscape)
+  partner: cncf
+  partner_name: CNCF (Cloud Native Landscape)
+  category: Cloud native landscape
+  type: register
+  channel: standard-directory
+  evidence: https://github.com/cncf/landscape/blob/42dd4cd91dad8ec8558ac02467a43f0805b9957a/landscape.yml
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: CNCF Cloud Native Landscape (github.com/cncf/landscape landscape.yml @42dd4cd91d)
+    spec_file: null
+    standard: Cloud Native (CNCF)
+    role: cncf-member (Silver)
+    registered_name: Apiiro
+    registered_names:
+    - Apiiro
+    website: https://www.apiiro.com/
+    matched_domain: apiiro.com
+    matched_by: domain+name-among-holders
+    member_tier: Silver
+    joined: '2021-08-01'
+    end_user: false
+    cncf_projects: []
+    landscape_categories: []
+    landscape_entries: 0
+    signal_note: 'participation only: a landscape listing is standard-participant evidence, not depth. Entries,
+      categories, tier and projects are CONTEXT, never read (breadth is not credit)'
+    detected_by: sweep-cloud-native.py
+    detected: '2026-10-19'
   status: not-a-workflow
   arazzo: null
