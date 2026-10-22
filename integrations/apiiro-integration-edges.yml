@@ -27,6 +27,7 @@ checked:
 - https://fidoalliance.org/certification/fido-certified-products/
 - https://www.cisa.gov/securebydesign/pledge/secure-design-pledge-signers
 - atlassian/integrations/atlassian-integration-edges.yml
+- backstage/integrations/backstage-integration-edges.yml
 marketplace_apps: []
 edges:
 - partner_name: GitHub Marketplace (apps)
@@ -331,6 +332,23 @@ edges:
   - Apiiro for Bitbucket Cloud
   listing_count: 1
   detected: '2026-10-21'
+  detected_by: mirror-platform-listings.py
+  category: Security
+- partner_name: Backstage (own)
+  partner: backstage
+  partner_match: mirror
+  mirror_match: domain+name-among-holders
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://github.com/backstage/backstage/tree/d72327203d5d0812bee2eace8688fa5ab22867be/microsite/data/plugins/apiiro.yaml
+  mirror_of: backstage/integrations/backstage-integration-edges.yml
+  apps:
+  - Apiiro
+  listing_count: 1
+  detected: '2026-10-22'
   detected_by: mirror-platform-listings.py
   category: Security
 source:
